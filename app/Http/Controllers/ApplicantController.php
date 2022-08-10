@@ -64,7 +64,7 @@ class ApplicantController extends \App\Http\Controllers\Controller
 
             // Return
             return DataTables::of($applicants)
-                ->addColumn('checkbox', '<input type="checkbox" class="form-check-input checkbox-one">')
+                ->addColumn('checkbox', '<input type="checkbox" class="form-check-input checkbox-one" id="{{ $id }}">')
                 ->editColumn('name', '
                     <span class="d-none">{{ $name }}</span>
                     <a href="{{ route(\'admin.applicant.detail\', [\'id\' => $id]) }}">{{ ucwords($name) }}</a>

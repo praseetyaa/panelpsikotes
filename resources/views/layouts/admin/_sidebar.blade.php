@@ -2,7 +2,13 @@
 <nav id="sidebar" class="sidebar js-sidebar">
 	<div class="sidebar-content js-simplebar">
 		<a class="sidebar-brand" href="/" target="_blank">
-			<span class="align-middle">PersonalityTalk</span>
+			<div class="d-flex align-items-center">
+				<i class="bi bi-asterisk me-2 h1 text-white mb-0"></i>
+				<div class="position-relative" style="top:-3px">
+					<p class="mb-0 text-muted" style="font-size:10px; position:relative; bottom:-3px">Spandiv</p>
+					<p class="mb-0 align-middle">{{ config('app.name') }}</p>
+				</div>
+			</div>
 		</a>
 		<ul class="sidebar-nav">
 			@foreach(menu() as $menu)

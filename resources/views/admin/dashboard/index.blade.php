@@ -10,7 +10,7 @@
 <div class="alert alert-success" role="alert">
     <div class="alert-message">
         <h4 class="alert-heading">Selamat Datang!</h4>
-        <p class="mb-0">Selamat datang kembali <strong>{{ Auth::user()->nama_user }}</strong> di PersonalityTalk.</p>
+        <p class="mb-0">Selamat datang kembali <strong>{{ Auth::user()->nama_user }}</strong> di Tes Psikologi.</p>
     </div>
 </div>
 
